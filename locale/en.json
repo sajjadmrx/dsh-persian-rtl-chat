@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Persian RTL Chat",
+    "description": "Applies Vazirmatn and right-to-left direction on Persian and Arabic chat messages in DeepSeek Harness, keeping code blocks left-to-right."
+  }
+}

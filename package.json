@@ -1,0 +1,57 @@
+{
+  "name": "dsh-persian-rtl-chat",
+  "version": "1.1.0",
+  "private": false,
+  "description": "Auto RTL and Vazirmatn font for Persian and Arabic chat messages in DeepSeek Harness",
+  "license": "MIT",
+  "author": "sajjadmrx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sajjadmrx/dsh-persian-rtl-chat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sajjadmrx/dsh-persian-rtl-chat/issues"
+  },
+  "homepage": "https://github.com/sajjadmrx/dsh-persian-rtl-chat#readme",
+  "keywords": [
+    "deepseek",
+    "dsh",
+    "deepseek-harness",
+    "rtl",
+    "persian",
+    "farsi",
+    "arabic",
+    "vazirmatn",
+    "vazir",
+    "chat"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "LICENSE",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-chat"
+      ]
+    }
+  }
+}
